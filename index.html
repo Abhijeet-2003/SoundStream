@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Music App</title>
+</head>
+
+<body>
+<header>
+    <div class="menu_side">
+        <h1>SoundStream - Music Player</h1>
+        <div class="playlist">
+            <h4 class="active" onclick="change1()" id="link1"><span></span><i class="bi bi-music-note-beamed"></i> Your Playlists</h4>
+            <h4 onclick="change2()" id="link2"><span></span><i class="bi bi-music-note-beamed"></i> Recently Played</h4>
+            <h4 onclick="change3()" id="link3"><span></span><i class="bi bi-music-note-beamed"></i> Recommended</h4>
+        </div>
+        <div class="menu_song" id="menu-song">
+            <!-- <li class="songItem">
+                <span>01</span>
+                <img src="img/1.jpg" alt="Alan">
+                <h5>
+                    On My Way
+                    <div class="subtitle">Alan Walker</div>
+                </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="1"></i>
+            </li> -->
+        </div>
+        <div class="menu_song" id="recently-played">
+            <!-- <li class="songItem">
+                <span>01</span>
+                <img src="img/1.jpg" alt="Alan">
+                <h5>
+                    On My Way
+                    <div class="subtitle">Alan Walker</div>
+                </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="1"></i>
+            </li> -->
+        </div>
+        <div class="menu_song" id="recommendations">
+            <!-- <li class="songItem">
+                <span>01</span>
+                <img src="img/1.jpg" alt="Alan">
+                <h5>
+                    On My Way
+                    <div class="subtitle">Alan Walker</div>
+                </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="1"></i>
+            </li> -->
+        </div>
+    </div>
+
+
+    <div class="song_side" id="song-side">
+        <nav>
+            <ul>
+                <li id="nav1" class="focus" onclick="navClick1()">Discover</li>
+                <li id="nav2" onclick="navClick2()">MY LIBRARY</li>
+                <li id="nav3" onclick="navClick3()">RADIO</li>
+            </ul>
+            <div class="search">
+                <i class="bi bi-search"></i>
+                <input type="text" placeholder="Search Music..." id="searchbar">
+                <div class="result-tracks flex-grow-1 my-2" style="overflow-y: auto;" ></div>
+            </div>
+            <div class="device-cont">
+                <select name="" id="devices">
+                    
+                </select>
+            </div>
+            <div class="user" id="user" onclick="userClick()">
+                <img src="" alt="User" title="User" id="userimg">
+                <div id="username"></div>
+            </div>
+            
+        </nav>
+
+        <div class="user-info" id="user-info">
+            <div class="user_info">
+                <img src="" alt="" class="profile_img" id="profile_img">
+                <div class="side_info">
+                    PROFILE
+                    <h1 class="profile_name" id="profile_name"></h1>
+                </div>
+            </div>
+            <div class="cont1">
+                <div class="followArt-cont">
+                    <h4>Following</h4>
+                    <div class="btn_s">
+                        <i id="left_scrolls" class="bi bi-arrow-left-short"></i>
+                        <i id="right_scrolls" class="bi bi-arrow-right-short"></i>
+                    </div>
+                </div>
+                <div class="collection" id="follow-artists">
+                    <!-- <li>
+                        <img src="img/arjit.jpg" alt="Arjit Singh" title="Arjit Singh">
+                        <div class="subtitle">Alan Walker</div>
+                    </li> -->
+                    <!-- change all img  -->
+                </div>
+            </div>
+            <div class="popular_song" id="albums-cont">
+                <div class="h4">
+                    <h4>Saved Albums</h4>
+                    <div class="btn_s">
+                        <i id="left_scroll" class="bi bi-arrow-left-short"></i>
+                        <i id="right_scroll" class="bi bi-arrow-right-short"></i>
+                    </div>
+                </div>
+                <div class="collection2" id="saved-albums">
+                    <!-- <li class="songItem">
+                        <div class="img_play">
+                            <img src="img/1.jpg" alt="alan">
+                            <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+                        </div>
+                        <h5>On My Way
+                            <br>
+                            <div class="subtitle">Alan Walker</div>
+                        </h5>
+                    </li> -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="content" id="content">
+            <h1 id="top-artist-song"></h1>
+            <p id="release_date"></p>
+            <div class="buttons">
+                <button>PLAY</button>
+                <button>FOLLOW</button>
+            </div>
+            <div id="cover-img-cont"><img id="cover-img" src="" alt=""></div>
+        </div>
+        <div class="popular_song" id="popular_song">
+            <div class="h4">
+                <h4>Favourite Songs</h4>
+                <div class="btn_s">
+                    <i id="left_scroll" class="bi bi-arrow-left-short"></i>
+                    <i id="right_scroll" class="bi bi-arrow-right-short"></i>
+                </div>
+            </div>
+            <div class="pop_song" id="liked-songs">
+                <!-- <li class="songItem">
+                    <div class="img_play">
+                        <img src="img/1.jpg" alt="alan">
+                        <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+                    </div>
+                    <h5>On My Way
+                        <br>
+                        <div class="subtitle">Alan Walker</div>
+                    </h5>
+                </li> -->
+            </div>
+        </div>
+        <div class="popular_artists" id="popular_artists">
+            <div class="h4">
+                <h4>Favourite Artists</h4>
+                <div class="btn_s">
+                    <i id="left_scrolls" class="bi bi-arrow-left-short"></i>
+                    <i id="right_scrolls" class="bi bi-arrow-right-short"></i>
+                </div>
+            </div>
+            <div class="item" id="fav-artists">
+                <!-- <li>
+                    <img src="img/arjit.jpg" alt="Arjit Singh" title="Arjit Singh">
+                    <div class="subtitle">Alan Walker</div>
+                </li> -->
+                <!-- change all img  -->
+            </div>
+        </div>
+    </div>
+
+
+    <div class="master_play">
+        <div class="wave">
+            <div class="wave1"></div>
+            <div class="wave1"></div>
+            <div class="wave1"></div>
+        </div>
+        <img src="" alt="Alan" id="poster_master_play">
+        <h5 id="title"><br>
+            <div class="subtitle" id="current_artist"></div>
+        </h5>
+        <div class="icon">
+            <i class="bi bi-skip-start-fill" id="back"></i>
+            <i class="bi bi-play-fill" id="masterPlay"></i>
+            <i class="bi bi-skip-end-fill" id="next"></i>
+        </div>
+        <span id="currentStart">0:00</span>
+        <div class="bar">
+            <input type="range" id="seek" min="0" value="0" max="100">
+            <div class="bar2" id="bar2"></div>
+            <div class="dot"></div>
+        </div>
+        <span id="currentEnd">0:00</span>
+
+        <div class="vol">
+            <i class="bi bi-volume-down-fill" id="vol_icon"></i>
+            <input type="range" id="vol" min="0" value="30" max="100">
+            <div class="vol_bar"></div>
+            <div class="dot" id="vol_dot"></div>
+        </div>
+    </div>
+</header>
+</body>
+<script src="app.js"></script>
+</html>
