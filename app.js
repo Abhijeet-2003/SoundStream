@@ -232,9 +232,9 @@ function handleUsersResponse(){
         const username = document.getElementById('username');
         const profileimg = document.getElementById('profile_img');
         const profilename = document.getElementById('profile_name');
-        profileimg.src = data_user.images[0].url;
+        profileimg.src = data_user.images[1].url;
         profilename.textContent = data_user.display_name;
-        userimg.src = data_user.images[0].url;
+        userimg.src = data_user.images[1].url;
         username.textContent = data_user.display_name;
 
         const PLAYLISTS = `https://api.spotify.com/v1/users/${data_user.id}/playlists?limit=10`;
