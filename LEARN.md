@@ -1,4 +1,4 @@
-# What to Learn for contributing to Tune-It-A-Music-Player 
+# How to make a music player like SoundStream 
 
 ### Firstly - 
 * Create a basic template of a music website:
@@ -143,4 +143,4 @@ date.textContent = data_topartist.tracks[0].album.release_date;
 
 And similarly, modify many other things.
 
-**Contribute well 🚀**
+**Hope you enjoyed reading this 🚀**
