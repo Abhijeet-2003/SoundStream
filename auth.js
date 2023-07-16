@@ -1,4 +1,4 @@
-var redirect_uri = "https://sound-stream-three.vercel.app/player.html"; // change this your value
+var redirect_uri = "https://abhijeet-2003.github.io/SoundStream/player.html"; // change this your value
  
 
 var client_id = ""; 
