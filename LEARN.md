@@ -62,7 +62,7 @@
     ![image](learn_imgs/app.jpeg)
 7. Now, the most important steps are:
     * Click on **USERS AND ACCESS** and then click on **ADD NEW USER**. Fill in the details.
-    * After finishing this, click on **EDIT SETTINGS** and set the value of *REDIRECT_URI* as the URI of your Music Player HTML Page. In Tune-It-A-Music-Player, the page is *index.html* and the URI is *http://127.0.0.1:5500/index.html*
+    * After finishing this, click on **EDIT SETTINGS** and set the value of *REDIRECT_URI* as the URI of your Music Player HTML Page. In Tune-It-A-Music-Player, the page is *player.html* and the URI is *http://127.0.0.1:5500/player.html*
 
 Now, you can use the **CLIENT_ID** and **CLIENT_SECRET** for fetching data.
 
