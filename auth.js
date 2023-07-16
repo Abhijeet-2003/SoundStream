@@ -1,4 +1,4 @@
-var redirect_uri = "http://127.0.0.1:5500/player.html"; // change this your value
+var redirect_uri = "https://sound-stream-three.vercel.app/player.html"; // change this your value
  
 
 var client_id = ""; 
