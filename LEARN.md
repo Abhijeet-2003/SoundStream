@@ -55,14 +55,11 @@
 1. Go to the **[Spotify Developers Page](https://developer.spotify.com/)**
 2. Click on **Dashboard**
 3. **Log In** if you have an account, **Sign Up** if you don't.
-4. After you're Logged In, click on **CREATE AN APP**, fill in the necessary details and click on **CREATE**
-5. You'll see a page like this
-   ![image](learn_imgs/dash.jpeg)
-6. Click on your App, and now you'll be able to see something like this
-    ![image](learn_imgs/app.jpeg)
-7. Now, the most important steps are:
-    * Click on **USERS AND ACCESS** and then click on **ADD NEW USER**. Fill in the details.
-    * After finishing this, click on **EDIT SETTINGS** and set the value of *REDIRECT_URI* as the URI of your Music Player HTML Page. In Tune-It-A-Music-Player, the page is *player.html* and the URI is *http://127.0.0.1:5500/player.html*
+4. After you're Logged In, click on **Create app**, fill in the necessary details and click on **Save**
+5. Click on your App
+6. Now, the most important steps are:
+    * Click on **Settings** and then click on **User Management**. Fill in the details of the user and click on **Add user**.
+    * After finishing this, click on **Basic Information**, then scroll down and click on **Edit** and add the value of *REDIRECT_URI* as the URI of your Music Player HTML Page. In SoundStream, the page is *player.html* and the URI is *https://abhijeet-2003.github.io/SoundStream/player.html*
 
 Now, you can use the **CLIENT_ID** and **CLIENT_SECRET** for fetching data.
 
@@ -143,4 +140,4 @@ date.textContent = data_topartist.tracks[0].album.release_date;
 
 And similarly, modify many other things.
 
-**Hope you enjoyed reading this 🚀**
+**Hope you enjoyed learning about this project 🚀.**
